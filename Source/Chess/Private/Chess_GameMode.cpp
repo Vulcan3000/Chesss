@@ -677,7 +677,7 @@ void AChess_GameMode::ChessPieceMoves(ABasePiece* SelectedPiece, FVector Locatio
 
 				WhitePieces[indey].Piece->SelfDestroy();
 				WhitePieces.RemoveAt(indey);
-				SpawnPiece(WhiteQueen, Location + FVector(0, 0, 10));
+				SpawnPiece(WhiteQueen, Location + FVector(0, 0, -10));
 			}
 		}
 	}
@@ -687,7 +687,7 @@ void AChess_GameMode::ChessPieceMoves(ABasePiece* SelectedPiece, FVector Locatio
 
 				BlackPieces[indey].Piece->SelfDestroy();
 				BlackPieces.RemoveAt(indey);
-				SpawnPiece(BlackQueen, Location + FVector(0, 0, 10));
+				SpawnPiece(BlackQueen, Location + FVector(0, 0, -10));
 			}
 		}
 	}
